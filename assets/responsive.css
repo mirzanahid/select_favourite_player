@@ -1,0 +1,337 @@
+/*Responsive for Mobile Device */
+@media (max-width: 575.98px) {
+    .manTennisPlayer1 {
+        display: none;
+    }
+
+    .tennisPlayer2 {
+        display: none;
+    }
+
+    /* =========================
+            typography start
+       ========================= */
+    .main-heading {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .header-pragraph {
+        font-size: 14px;
+        line-height: 24px;
+        width: auto;
+    }
+
+    /* =========================
+            typography end
+       ========================= */
+    /* =========================
+            header start
+       ========================= */
+    header {
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* =========================
+            header end
+       ========================= */
+    /* =========================
+            main start
+       ========================= */
+
+    main .main-content {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        
+    }
+
+    .main-content .side-bar {
+        width: 295px;
+        margin-left: 0;
+        height: 910px;
+        margin: auto;
+    }
+
+    .main-content .cards-content .cards {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .main-content .sports-card {
+        width: 295px;
+        margin: auto;
+    }
+
+    /* =========================
+            main end
+       ========================= */
+}
+
+
+
+
+/*Responsive for Mobile Landscpae Device */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .manTennisPlayer1 {
+        display: none;
+    }
+
+    .tennisPlayer2 {
+        display: none;
+    }
+
+    /* =========================
+            typography start
+       ========================= */
+    .main-heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .header-pragraph {
+        font-size: 18px;
+        line-height: 28px;
+        width: auto;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    /* =========================
+            typography end
+       ========================= */
+    /* =========================
+            header start
+       ========================= */
+    header {
+        padding-top: 60px;
+    }
+
+    /* =========================
+            header end
+       ========================= */
+    /* =========================
+            main start
+       ========================= */
+
+    main .main-content {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .main-content .side-bar {
+        width: 295px;
+        margin-left: 0;
+        height: 910px;
+        margin: auto;
+    }
+
+    .main-content .cards-content .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-content .sports-card {
+        width: 245px;
+    }
+
+    .selectBtn,
+    .budgetBtn {
+        width: 100%;
+    }
+
+    /* =========================
+            main end
+       ========================= */
+}
+
+
+
+/*Responsive for Medium Device */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .manTennisPlayer1 {
+        display: none;
+    }
+
+    .tennisPlayer2 {
+        display: none;
+    }
+
+    /* =========================
+            typography start
+       ========================= */
+    .main-heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .header-pragraph {
+        font-size: 18px;
+        line-height: 28px;
+        width: auto;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    /* =========================
+            typography end
+       ========================= */
+    /* =========================
+            header start
+       ========================= */
+    header {
+        padding-top: 60px;
+    }
+
+    /* =========================
+            header end
+       ========================= */
+    /* =========================
+            main start
+       ========================= */
+
+    main .main-content {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .main-content .side-bar {
+        width: 100%;
+        margin-left: 0;
+        height: 675px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .select-v,
+    .budget {
+        width: 335px;
+    }
+
+    .main-content .cards-content .cards {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .main-content .sports-card {
+        width: 335px;
+
+    }
+
+    /* =========================
+            main end
+       ========================= */
+}
+
+
+
+
+/*Responsive for large Device */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .manTennisPlayer1 {
+        display: none;
+    }
+
+    .tennisPlayer2 {
+        display: none;
+    }
+
+    /* =========================
+            typography start
+       ========================= */
+    .main-heading {
+        font-size: 52px;
+        line-height: 50px;
+    }
+
+    .header-pragraph {
+        font-size: 20px;
+        line-height: 28px;
+        width: 700px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    /* =========================
+            typography end
+       ========================= */
+    /* =========================
+            main start
+       ========================= */
+
+    main .main-content {
+        margin-top: 50px;
+    }
+
+
+    .main-content .cards-content .cards {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    /* =========================
+            main end
+       ========================= */
+}
+
+
+/*Responsive for Extra large Device */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .manTennisPlayer1 {
+        display: none;
+    }
+
+    .tennisPlayer2 {
+        display: none;
+    }
+
+    /* =========================
+            typography start
+       ========================= */
+    .main-heading {
+        font-size: 52px;
+        line-height: 50px;
+    }
+
+    .header-pragraph {
+        font-size: 20px;
+        line-height: 28px;
+        width: 700px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    /* =========================
+            typography end
+       ========================= */
+    /* =========================
+            main start
+       ========================= */
+
+
+    .main-content .cards-content .cards {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .main-content .sports-card {
+        width: 250px;
+    }
+
+    .selectBtn, .budgetBtn {
+        width: 100%;
+    }
+    /* =========================
+            main end
+       ========================= */
+}

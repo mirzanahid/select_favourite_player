@@ -48,7 +48,7 @@ body {
 .main-heading {
     font-family: 'Berkshire Swash', cursive;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 52px;
     line-height: 94px;
     color: #FF5E19;
     text-align: center;
@@ -118,9 +118,9 @@ ol li {
     list-style-type: none;
     position: relative;
     margin-left: 40px;
-  }
-  
-  ol li:before {
+}
+
+ol li:before {
     color: #888888;
     content: counter(list) ".";
     left: -50px;
@@ -131,7 +131,7 @@ ol li {
     font-weight: 800;
     font-size: 20px;
     line-height: 27px;
-  }
+}
 
 .select-input-label {
     font-family: 'Manrope', sans-serif;
@@ -140,15 +140,38 @@ ol li {
     line-height: 22px;
     color: #AFAFAF;
 }
-.playerEmptyMessage{
+
+.playerEmptyMessage {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    color: #AFAFAF; 
+    color: #AFAFAF;
 }
+
 .text-orange {
     color: #FF5E19;
+}
+
+.footer-heading {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #ffff;
+    display: block;
+    margin-bottom: 15px;
+}
+.footer-heading:hover{
+    color: #FFFFFF;
+}
+.footer-copyright {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+
 }
 
 /* ============================
@@ -205,7 +228,7 @@ header {
         main css start
    ============================ */
 main {
-    padding-bottom: 500px;
+    padding-bottom: 50px;
 }
 
 main .main-content {
@@ -261,7 +284,7 @@ main .main-content {
 }
 
 .main-content .side-bar .budget .budget-body {
-   
+
     text-align: center;
 }
 
@@ -291,4 +314,42 @@ main .main-content {
 
 /* ============================
         main css end
+   ============================ */
+/* ============================
+        footer css start
+   ============================ */
+   footer{
+    padding-bottom:  30px;
+   }
+footer hr {
+    background: #717171;
+    height: 2px;
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .social-icons{
+    margin-top: 20px;
+}
+footer .social-icons ul li {
+    display: inline-block;
+    margin: 0 5px 0 5px;
+}
+
+footer .social-icons ul li a {
+    display: inline-block;
+    font-size: 18px;
+    color: #ffff;
+    background: #0D0D0D;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+/* ============================
+        footer css end
    ============================ */
