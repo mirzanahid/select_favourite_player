@@ -1,13 +1,5 @@
 /*Responsive for Mobile Device */
 @media (max-width: 575.98px) {
-    .manTennisPlayer1 {
-        display: none;
-    }
-
-    .tennisPlayer2 {
-        display: none;
-    }
-
     /* =========================
             typography start
        ========================= */
@@ -21,7 +13,12 @@
         line-height: 24px;
         width: auto;
     }
-
+    .line-marker {
+        position: absolute;
+        top: 42px;
+        right: -35px;
+        width: 150px;
+    }
     /* =========================
             typography end
        ========================= */
@@ -33,7 +30,15 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-
+    .header-image01 {
+      display: none;
+    }
+    .bdCricketBatch {
+       display: none; 
+    }
+    .header-image02 {
+       display: none;
+    }
     /* =========================
             header end
        ========================= */
@@ -44,7 +49,6 @@
     main .main-content {
         flex-direction: column-reverse;
         margin-top: 50px;
-        
     }
 
     .main-content .side-bar {
@@ -70,18 +74,9 @@
 }
 
 
-
-
 /*Responsive for Mobile Landscpae Device */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .manTennisPlayer1 {
-        display: none;
-    }
-
-    .tennisPlayer2 {
-        display: none;
-    }
-
+   
     /* =========================
             typography start
        ========================= */
@@ -99,7 +94,12 @@
     .card-title {
         font-size: 22px;
     }
-
+    .line-marker {
+        position: absolute;
+        top: 50px;
+        right: -20px;
+        width: 150px;
+    }
     /* =========================
             typography end
        ========================= */
@@ -109,7 +109,15 @@
     header {
         padding-top: 60px;
     }
-
+    .header-image01 {
+        display: none;
+      }
+      .bdCricketBatch {
+         display: none; 
+      }
+      .header-image02 {
+         display: none;
+      }
     /* =========================
             header end
        ========================= */
@@ -128,7 +136,6 @@
         height: 910px;
         margin: auto;
     }
-
     .main-content .cards-content .cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -141,42 +148,36 @@
     .budgetBtn {
         width: 100%;
     }
-
     /* =========================
             main end
        ========================= */
 }
 
-
-
 /*Responsive for Medium Device */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .manTennisPlayer1 {
-        display: none;
-    }
-
-    .tennisPlayer2 {
-        display: none;
-    }
-
     /* =========================
             typography start
        ========================= */
-    .main-heading {
-        font-size: 40px;
-        line-height: 50px;
+       .main-heading {
+        font-size: 30px;
+        line-height: 36px;
     }
-
     .header-pragraph {
-        font-size: 18px;
-        line-height: 28px;
-        width: auto;
+        font-size: 15px;
+        line-height: 24px;
+        width: 430px;
     }
 
     .card-title {
         font-size: 22px;
     }
 
+    .line-marker {
+        position: absolute;
+        top: 40px;
+        right: -13px;
+        width: 115px;
+    }
     /* =========================
             typography end
        ========================= */
@@ -184,9 +185,26 @@
             header start
        ========================= */
     header {
-        padding-top: 60px;
+        padding-top: 100px;
     }
-
+    .header-image01 {
+        width: 145px;
+        height: 230px;
+        top: 119px;
+        left: 0;
+    }
+    .header-image02 {
+        top: 168px;
+        right: 0;
+        width: 151px;
+        height: 180px;
+    }
+    .bdCricketBatch {
+        width: 50px;
+        height: 50px;
+        top: -60px;
+        right: 17%;
+    }
     /* =========================
             header end
        ========================= */
@@ -228,39 +246,57 @@
        ========================= */
 }
 
-
-
-
 /*Responsive for large Device */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .manTennisPlayer1 {
-        display: none;
-    }
-
-    .tennisPlayer2 {
-        display: none;
-    }
-
     /* =========================
             typography start
        ========================= */
-    .main-heading {
-        font-size: 52px;
-        line-height: 50px;
+       .main-heading {
+        font-size: 38px;
+        line-height: 42px;
     }
 
     .header-pragraph {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 28px;
-        width: 700px;
+        width: 516px;
     }
 
     .card-title {
         font-size: 22px;
     }
-
+    .line-marker {
+        top: 48px;
+        right: -25px;
+        width: 160px;
+    }
     /* =========================
             typography end
+       ========================= */
+
+    /* =========================
+            header start
+       ========================= */
+       .header-image01 {
+        width: 180px;
+        height: 280px;
+        top: 123px;
+        left: 0;
+    }
+    .header-image02 {
+        top: 188px;
+        right: 0;
+        width: 170px;
+        height: 215px;
+    }
+    .bdCricketBatch {
+        width: 60px;
+        height: 60px;
+        top: -70px;
+        right: 16%;
+    }
+    /* =========================
+            header end
        ========================= */
     /* =========================
             main start
@@ -269,50 +305,66 @@
     main .main-content {
         margin-top: 50px;
     }
-
-
     .main-content .cards-content .cards {
         grid-template-columns: repeat(2, 1fr);
 
     }
-
-
     /* =========================
             main end
        ========================= */
 }
 
-
 /*Responsive for Extra large Device */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-    .manTennisPlayer1 {
-        display: none;
-    }
-
-    .tennisPlayer2 {
-        display: none;
-    }
 
     /* =========================
             typography start
        ========================= */
-    .main-heading {
-        font-size: 52px;
-        line-height: 50px;
+       .main-heading {
+        font-size: 48px;
+        line-height: 52px;
     }
 
     .header-pragraph {
-        font-size: 20px;
-        line-height: 28px;
-        width: 700px;
+        font-size: 18px;
+        line-height: 26px;
+        width: 620px;
     }
 
     .card-title {
         font-size: 22px;
     }
-
+    .line-marker {
+      top: 60px;
+        right: -13px;
+        width: 170px;
+    }
     /* =========================
             typography end
+       ========================= */
+    /* =========================
+            header start
+       ========================= */
+       .header-image01 {
+        width: 185px;
+        height: 280px;
+        top: 129px;
+        left: 0;
+    }
+    .header-image02 {
+        top: 173px;
+        right: 0;
+        width: 200px;
+        height: 235px;
+    }
+    .bdCricketBatch {
+        width: 70px;
+        height: 70px;
+        top: -80px;
+        right: 16%;
+    }
+    /* =========================
+            header end
        ========================= */
     /* =========================
             main start

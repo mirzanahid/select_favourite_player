@@ -45,15 +45,28 @@ body {
 /* ============================
         typography css start
    ============================ */
+.main-headingDiv {
+    position: relative;
+}
+
 .main-heading {
     font-family: 'Berkshire Swash', cursive;
     font-weight: 400;
     font-size: 52px;
     line-height: 94px;
-    color: #FF5E19;
+    color: #F83546;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+}
 
+.main-heading span {
+    position: relative;
+}
+
+.line-marker {
+    position: absolute;
+    top: 65px;
+    right: -35px;
 }
 
 .header-pragraph {
@@ -101,9 +114,6 @@ body {
     line-height: 33px;
     color: #FFFFFF;
 }
-
-
-
 .select-list-items li {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
@@ -112,7 +122,6 @@ body {
     color: #FFFFFF;
     margin-bottom: 20px;
 }
-
 ol li {
     counter-increment: list;
     list-style-type: none;
@@ -150,7 +159,7 @@ ol li:before {
 }
 
 .text-orange {
-    color: #FF5E19;
+    color: #F83546;
 }
 
 .footer-heading {
@@ -162,16 +171,17 @@ ol li:before {
     display: block;
     margin-bottom: 15px;
 }
-.footer-heading:hover{
+
+.footer-heading:hover {
     color: #FFFFFF;
 }
+
 .footer-copyright {
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
-
 }
 
 /* ============================
@@ -187,13 +197,12 @@ ol li:before {
     font-size: 16px;
     line-height: 21px;
     color: #ffff;
-    background-color: #015196;
+    background-color: #017761;
     border: 0;
     padding: 12px 0;
     width: 220px;
 
 }
-
 /* ============================
         button css end
    ============================ */
@@ -204,21 +213,28 @@ header {
     background-color: #000;
     padding: 140px 0;
 }
-
-.manTennisPlayer1 {
-    width: 345px;
-    height: 361px;
+.header-image01 {
+    width: 270px;
+    height: 390px;
     position: absolute;
-    top: 123px;
+    top: 70px;
     left: 0;
 }
 
-.tennisPlayer2 {
+.bdCricketBatch {
+    width: 70px;
+    height: 70px;
     position: absolute;
-    top: 144px;
+    top: -60px;
+    right: 17%;
+}
+
+.header-image02 {
+    position: absolute;
+    top: 168px;
     right: 0;
-    width: 290px;
-    height: 340px;
+    width: 250px;
+    height: 289px;
 }
 
 /* ============================
@@ -235,8 +251,6 @@ main .main-content {
     display: flex;
     align-items: stretch;
     margin-top: 75px;
-
-
 }
 
 .main-content .cards-content {
@@ -258,9 +272,14 @@ main .main-content {
     border-radius: 0;
 }
 
+.card-img,
+.card-img-top {
+    border-radius: 0;
+}
+
 .main-content .sports-card .card-img-top {
     width: 100%;
-    height: 230px;
+    height: 280px;
 }
 
 .main-content .sports-card .card-body {
@@ -284,7 +303,6 @@ main .main-content {
 }
 
 .main-content .side-bar .budget .budget-body {
-
     text-align: center;
 }
 
@@ -318,9 +336,10 @@ main .main-content {
 /* ============================
         footer css start
    ============================ */
-   footer{
-    padding-bottom:  30px;
-   }
+footer {
+    padding-bottom: 30px;
+}
+
 footer hr {
     background: #717171;
     height: 2px;
@@ -331,9 +350,10 @@ footer {
     text-align: center;
 }
 
-footer .social-icons{
+footer .social-icons {
     margin-top: 20px;
 }
+
 footer .social-icons ul li {
     display: inline-block;
     margin: 0 5px 0 5px;
