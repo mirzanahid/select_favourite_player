@@ -4,10 +4,7 @@ function createListIteam(playerName) {
     li.innerText = nameInner;
     const selectUlList = document.getElementById('selectList');
     selectUlList.appendChild(li);
-
- 
 }
-
 
 function getDataFromInput(perPlaerCost){
     const inputField = document.getElementById(perPlaerCost)  
@@ -19,4 +16,11 @@ function getDataFromInput(perPlaerCost){
 function setDataIntoInput(elementId,elementValue){
     const playerExpense = document.getElementById(elementId);
     playerExpense.innerText = elementValue;
+}
+
+
+function checkListIteams(){
+    const playerList = document.querySelectorAll('#selectList li');
+    const playerListLength = playerList.length
+    return playerListLength;
 }
