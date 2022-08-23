@@ -7,7 +7,6 @@ function createListIteam(playerName) {
 }
 
 function getDataFromInput(perPlaerCost){
-   
     const inputField = document.getElementById(perPlaerCost)  
     const inputFieldString = inputField.value;
     const inputStringToNumber = parseInt(inputFieldString);
