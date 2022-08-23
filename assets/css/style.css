@@ -6,10 +6,10 @@
     padding: 0;
 }
 
-ol,
+/* ol,
 ul {
     list-style: none;
-}
+} */
 
 a,
 a:hover,
@@ -31,6 +31,11 @@ p {
 
 body {
     background-color: #151515;
+}
+
+.disabled {
+    background: #A2A9AF !important;
+
 }
 
 /* ============================
@@ -98,7 +103,7 @@ body {
 
 
 
-.select-list-item {
+.select-list-items li {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -107,14 +112,35 @@ body {
     margin-bottom: 20px;
 }
 
-.list-number {
+/* .list-number {
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     font-size: 24px;
     line-height: 27px;
-    color: #888888;
+    
     margin-right: 15px;
-}
+} */
+
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+    margin-left: 40px;
+  }
+  
+  
+  ol li:before {
+    color: #888888;
+    content: counter(list) ".";
+    left: -50px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 27px;
+  }
 
 .select-input-label {
     font-family: 'Manrope', sans-serif;
@@ -123,16 +149,19 @@ body {
     line-height: 22px;
     color: #AFAFAF;
 }
-.text-orange{
+
+.text-orange {
     color: #FF5E19;
 }
+
 /* ============================
         typography css end
    ============================ */
 /* ============================
         button css start
    ============================ */
-.selectBtn {
+.selectBtn,
+.budgetBtn {
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -232,32 +261,36 @@ main .main-content {
     padding-bottom: 60px;
     margin-bottom: 24px;
 }
-.main-content .side-bar .budget .budget-body{
-  padding: 0 30px;
-  text-align: center;
+
+.main-content .side-bar .budget .budget-body {
+    padding: 0 30px;
+    text-align: center;
 }
-.main-content .side-bar .budget .budget-body button{
+
+.main-content .side-bar .budget .budget-body button {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
 
 }
-.main-content .side-bar .budget .input-field{
+
+.main-content .side-bar .budget .input-field {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.main-content .side-bar .budget .selcet-input{
-      border: 1px solid #FFFFFF;
-      background-color: #0D0D0D;
-      color: #ffff;
-      width: 120px;
-      padding-left: 10px;
-      padding-top: 12px;
-      padding-bottom: 12px;
+.main-content .side-bar .budget .selcet-input {
+    border: 1px solid #FFFFFF;
+    background-color: #0D0D0D;
+    color: #ffff;
+    width: 120px;
+    padding-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
+
 /* ============================
         main css end
    ============================ */

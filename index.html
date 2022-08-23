@@ -36,59 +36,59 @@
         <div class="container">
             <div class="main-content">
                 <div class="cards-content">
-                    <div class="cards">
+                    <div id="cards" class="cards">
                         <div class="card sports-card">
                             <img src="assets/images/player01.jpg" class="card-img-top" alt="player01">
                             <div class="card-body">
-                                <h5 class="card-title">Mashrafe Mortaza</h5>
+                                <h5 class="card-title" id="player1-name">Mashrafe Mortaza</h5>
                                 <p class="card-details"> <span>36 Goals
                                     </span> . <span>120 Assist</span></p>
-                                <button class="selectBtn">SELECT</button>
+                                <button id="seclet1" class="selectBtn">SELECT</button>
                             </div>
                         </div>
                         <div class="card sports-card">
                             <img src="assets/images/player01.jpg" class="card-img-top" alt="player01">
                             <div class="card-body">
-                                <h5 class="card-title">Shakib Al Hasan</h5>
+                                <h5 id="player2-name" class="card-title">Shakib Al Hasan</h5>
                                 <p class="card-details"> <span>36 Goals
                                     </span> . <span>120 Assist</span></p>
-                                <button class="selectBtn">SELECT</button>
+                                <button id="seclet2" class="selectBtn">SELECT</button>
                             </div>
                         </div>
                         <div class="card sports-card">
                             <img src="assets/images/player01.jpg" class="card-img-top" alt="player01">
                             <div class="card-body">
-                                <h5 class="card-title">Mahmudullah</h5>
+                                <h5 id="player3-name" class="card-title">Mahmudullah</h5>
                                 <p class="card-details"> <span>36 Goals
                                     </span> . <span>120 Assist</span></p>
-                                <button class="selectBtn">SELECT</button>
+                                <button id="seclet3" class="selectBtn">SELECT</button>
                             </div>
                         </div>
                         <div class="card sports-card">
                             <img src="assets/images/player01.jpg" class="card-img-top" alt="player01">
                             <div class="card-body">
-                                <h5 class="card-title">Soumya Sarkar</h5>
+                                <h5 id="player4-name" class="card-title">Soumya Sarkar</h5>
                                 <p class="card-details"> <span>36 Goals
                                     </span> . <span>120 Assist</span></p>
-                                <button class="selectBtn">SELECT</button>
+                                <button id="seclet4" class="selectBtn">SELECT</button>
                             </div>
                         </div>
                         <div class="card sports-card">
                             <img src="assets/images/player01.jpg" class="card-img-top" alt="player01">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 id="player5-name" class="card-title">Card title</h5>
                                 <p class="card-details"> <span>36 Goals
                                     </span> . <span>120 Assist</span></p>
-                                <button class="selectBtn">SELECT</button>
+                                <button id="seclet5" class="selectBtn">SELECT</button>
                             </div>
                         </div>
                         <div class="card sports-card">
                             <img src="assets/images/player01.jpg" class="card-img-top" alt="player01">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 id="player6-name" class="card-title">Card title</h5>
                                 <p class="card-details"> <span>36 Goals
                                     </span> . <span>120 Assist</span></p>
-                                <button class="selectBtn">SELECT</button>
+                                <button id="seclet6" class="selectBtn">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -99,13 +99,9 @@
                             <h2 class="sideBar-heading">Select-V</h2>
                             <img src="assets/images/title-line.png" alt="title-line">
                         </div>
-                        <ul>
-                            <li class="select-list-item"><span class="list-number">1.</span> sdfsadfs</li>
-                            <li class="select-list-item"><span class="list-number">1.</span> sdfsadfs</li>
-                            <li class="select-list-item"><span class="list-number">1.</span> sdfsadfs</li>
-                            <li class="select-list-item"><span class="list-number">1.</span> sdfsadfs</li>
-                            <li class="select-list-item"><span class="list-number">1.</span> sdfsadfs</li>
-                        </ul>
+                        <ol id="selectList" class="select-list-items">
+                          
+                        </ol>
                     </div>
                     <div class="budget">
                         <div class="sideBar-title">
@@ -115,25 +111,25 @@
                         <div class="budget-body">
                             <div class="input-field">
                                 <p class="select-input-label">Per Player</p>
-                                <input type="text" id="" class="selcet-input">
+                                <input type="text" id="perPlaerCost" class="selcet-input">
                             </div>
-                            <button class="selectBtn">Calculate</button>
+                            <button id="Calculate" class="budgetBtn">Calculate</button>
                             <div class="input-field">
-                                <p class="select-input-label">Per Player</p>
-                                <p class="text-white select-input-label">$<span>5000</span></p>
+                                <p class="select-input-label">Player Expenses</p>
+                                <p class="text-white select-input-label">$<span id="playerTotalEx">00</span></p>
                             </div>
                             <div class="input-field">
                                 <p class="select-input-label">Manager</p>
-                                <input type="text" id="" class="selcet-input">
+                                <input id="manageCost" type="text" id="" class="selcet-input">
                             </div>
                             <div class="input-field">
                                 <p class="select-input-label">Coach</p>
-                                <input type="text" id="" class="selcet-input">
+                                <input type="text" id="coachCost" class="selcet-input">
                             </div>
-                            <button class="selectBtn">Calculate Total</button>
+                            <button id="calculateTotal" class="budgetBtn">Calculate Total</button>
                             <div class="input-field">
                                 <p class="select-input-label text-white">Total</p>
-                                <p class="select-input-label text-orange">$<span>11000</span></p>
+                                <p class="select-input-label text-orange">$<span id="totalExpense">00</span></p>
                             </div>
                         </div>
                     </div>
@@ -142,6 +138,8 @@
 
         </div>
     </main>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
